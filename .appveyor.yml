@@ -1,6 +1,7 @@
 environment:
   matrix:
     - PYTHON: "C:\\PYTHON38-x64"
+build: off
 test_script:
   - "%PYTHON%\\python.exe run.py"
 artifacts:

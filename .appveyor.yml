@@ -1,0 +1,17 @@
+environment:
+  matrix:
+    - PYTHON: "C:\\PYTHON38-x64"
+test_script:
+  - "%PYTHON%\\python.exe run.py"
+artifacts:
+  - path: "test.txt"
+deploy:
+  provider: GitHub
+  auth_token:
+    secure: w1pwzVAnkw938lSYuIKnVbkHtid9YphEEZuHsvftTV5f5KjBAQH3283q7Um5j3xU
+  artifact: test.txt
+  draft: false
+  prelease: false
+  on:
+    branch: master
+    APPEVYOR_REPO_TAG: true

@@ -1,6 +1,6 @@
 language: python
 dist: xenial
-script: $PYTHON run.py
+script: python run.py
 deploy:
   provider: releases
   edge: true

@@ -15,4 +15,4 @@ deploy:
   prelease: false
   on:
     branch: master
-    APPEVYOR_REPO_TAG: true
+    APPVEYOR_REPO_TAG: true
